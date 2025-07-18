@@ -1,8 +1,9 @@
-const config = {
-  plugins: {
-    tailwindcss: {},
-    autoprefixer: {},
-  },
-};
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 
-export default config;
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
