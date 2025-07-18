@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import React from 'react';
+import './globals.css'
 
 export const metadata = {
   title: 'IMR Movie Portal',
