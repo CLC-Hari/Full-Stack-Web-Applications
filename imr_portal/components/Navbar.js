@@ -1,9 +1,18 @@
-import Link from 'next/link';
+import React from "react";
 
-export default function Navbar() {
+const Navbar  = () => {
   return (
-    <nav>
-      <Link href="/">Home</Link> | <Link href="/movies">Movies</Link>
-    </nav>
+    <div>
+      <nav className="bg-gray-900 text-white px-8 py-4 flex justify-between items-center">
+        <h1>IMR</h1>
+        <div>
+          <a href="/" className="text-white hover:text-gray-300 transition-colors">Home</a>
+          <a href="/movies" className="text-white hover:text-gray-300 transition-colors">Movies</a>
+          <a href="#contact" className="text-white hover:text-gray-300 transition-colors">Contact</a>
+        </div>
+      </nav>
+    </div>
   );
-}
+};
+
+export default Navbar;

@@ -1,4 +1,7 @@
-export default function HomePage() {
+import React from "react";
+
+
+const HomePage = () => {
   return (
     <main>
       <h1>Welcome to IMR Portal</h1>
@@ -6,3 +9,5 @@ export default function HomePage() {
     </main>
   );
 }
+
+export default HomePage;
