@@ -19,13 +19,16 @@ const movies = [
 ];
 
 const MoviesList = () => (
-  <div style={{ padding: '2rem' }}>
-    <h2 style={{ fontSize: '2rem', marginBottom: '1.5rem' }}>Movies List</h2>
-    <ul style={{ listStyle: 'none', padding: 0 }}>
+  <div className="flex justify-center">
+    <h2 className="text-3xl mb-6">Movies List</h2>
+    <ul className="list-none p-0">
       {movies.map((movie, idx) => (
-        <li key={idx} style={{ marginBottom: '2rem', background: '#f4f4f4', padding: '1rem', borderRadius: '8px' }}>
-          <h3 style={{ margin: 0 }}>{movie.title} <span style={{ color: '#888', fontWeight: 'normal' }}>({movie.year})</span></h3>
-          <div><strong>Actors:</strong> {movie.actors.join(', ')}</div>
+        <li key={idx} className="mb-8 bg-gray-100 p-4 rounded-lg">
+          <h3 className="m-0">{movie.title} 
+            <span className="text-gray-500 font-normal">({movie.year})</span></h3>
+          <div>
+            <strong>Actors:</strong> {movie.actors.join(', ')}
+            </div>
         </li>
       ))}
     </ul>
