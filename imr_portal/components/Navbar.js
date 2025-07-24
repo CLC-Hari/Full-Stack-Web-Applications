@@ -1,14 +1,17 @@
 import React from "react";
+import Link from "next/link";
 
 const Navbar  = () => {
   return (
-  <nav className="bg-gray-900 text-white px-20 py-5 flex justify-between items-center">
-    <h1 className="text-3xl font-bold">IMR</h1>
-    <div className="flex gap-7 font-bold">
-      <a href="/" className="text-white hover:text-gray-300 transition-colors hover:underline">Home</a>
-      <a href="/movies" className="text-white hover:text-gray-300 transition-colors hover:underline">Movies</a>
-    </div>
-  </nav>
+    <nav className="bg-gray-900 text-white">
+      <div className="container mx-auto px-6 py-5 flex justify-between items-center">
+        <h1 className="text-2xl font-bold tracking-tight">IMR</h1>
+        <div className="flex gap-6 font-medium">
+          <Link href="/" className="hover:text-gray-300 transition-colors">Home</Link>
+          <Link href="/movies" className="hover:text-gray-300 transition-colors">Movies</Link>
+        </div>
+      </div>
+    </nav>
   );
 };
 
